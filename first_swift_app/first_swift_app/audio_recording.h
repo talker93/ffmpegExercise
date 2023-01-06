@@ -16,6 +16,7 @@
 #include "libavutil/time.h"
 #include "libswresample/swresample.h"
 #include <unistd.h>
+#include "util.h"
 
 void rec_audio(void);
 

@@ -11,7 +11,6 @@
 		9A2CC21F2955351600E48CEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2CC21E2955351600E48CEB /* ViewController.swift */; };
 		9A2CC2212955351700E48CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2CC2202955351700E48CEB /* Assets.xcassets */; };
 		9A2CC2242955351700E48CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2CC2222955351700E48CEB /* Main.storyboard */; };
-		9A2CC22E295538D800E48CEB /* testc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2CC22D295538D800E48CEB /* testc.c */; };
 		9A2CC23329553DA300E48CEB /* libavdevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2CC23029553DA300E48CEB /* libavdevice.dylib */; };
 		9A2CC23429553DA300E48CEB /* libavdevice.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9A2CC23029553DA300E48CEB /* libavdevice.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		9A2CC23529553DA300E48CEB /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2CC23129553DA300E48CEB /* libavformat.dylib */; };
@@ -25,6 +24,10 @@
 		9A2CC2452956B92C00E48CEB /* libfdk-aac.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9A2CC2432956B92C00E48CEB /* libfdk-aac.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		9A5D9D092960A06200FD9968 /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5D9D082960A06200FD9968 /* libavcodec.dylib */; };
 		9A5D9D0A2960A06200FD9968 /* libavcodec.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9A5D9D082960A06200FD9968 /* libavcodec.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9A692CD32967E86B00849D15 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A692CD22967E86B00849D15 /* util.c */; };
+		9A692CD52968211700849D15 /* libx264.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A692CD42968211700849D15 /* libx264.dylib */; };
+		9A692CD62968211700849D15 /* libx264.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9A692CD42968211700849D15 /* libx264.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9A692CDA2968D1C800849D15 /* audio_recording.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2CC22D295538D800E48CEB /* audio_recording.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9A692CD62968211700849D15 /* libx264.dylib in Embed Libraries */,
 				9A2CC23629553DA300E48CEB /* libavformat.dylib in Embed Libraries */,
 				9A2CC23829553DA300E48CEB /* libavutil.dylib in Embed Libraries */,
 				9A5D9D0A2960A06200FD9968 /* libavcodec.dylib in Embed Libraries */,
@@ -54,8 +58,8 @@
 		9A2CC2232955351700E48CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A2CC2252955351700E48CEB /* first_swift_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = first_swift_app.entitlements; sourceTree = "<group>"; };
 		9A2CC22B295538D800E48CEB /* first_swift_app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "first_swift_app-Bridging-Header.h"; sourceTree = "<group>"; };
-		9A2CC22C295538D800E48CEB /* testc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testc.h; sourceTree = "<group>"; };
-		9A2CC22D295538D800E48CEB /* testc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = testc.c; sourceTree = "<group>"; };
+		9A2CC22C295538D800E48CEB /* audio_recording.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audio_recording.h; sourceTree = "<group>"; };
+		9A2CC22D295538D800E48CEB /* audio_recording.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = audio_recording.c; sourceTree = "<group>"; };
 		9A2CC23029553DA300E48CEB /* libavdevice.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.dylib; path = first_swift_app/libs/libavdevice.dylib; sourceTree = "<group>"; };
 		9A2CC23129553DA300E48CEB /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = first_swift_app/libs/libavformat.dylib; sourceTree = "<group>"; };
 		9A2CC23229553DA300E48CEB /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = first_swift_app/libs/libavutil.dylib; sourceTree = "<group>"; };
@@ -64,6 +68,11 @@
 		9A2CC2432956B92C00E48CEB /* libfdk-aac.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libfdk-aac.dylib"; path = "first_swift_app/libs/libfdk-aac.dylib"; sourceTree = "<group>"; };
 		9A2CC2462960058C00E48CEB /* try.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = try.c; sourceTree = "<group>"; };
 		9A5D9D082960A06200FD9968 /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = first_swift_app/libs/libavcodec.dylib; sourceTree = "<group>"; };
+		9A692CD12967E86B00849D15 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9A692CD22967E86B00849D15 /* util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		9A692CD42968211700849D15 /* libx264.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libx264.dylib; path = first_swift_app/libs/libx264.dylib; sourceTree = "<group>"; };
+		9A692CD72968D11300849D15 /* video_recording.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = video_recording.h; sourceTree = "<group>"; };
+		9A692CD82968D11300849D15 /* video_recording.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = video_recording.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A692CD52968211700849D15 /* libx264.dylib in Frameworks */,
 				9A2CC23529553DA300E48CEB /* libavformat.dylib in Frameworks */,
 				9A2CC23729553DA300E48CEB /* libavutil.dylib in Frameworks */,
 				9A5D9D092960A06200FD9968 /* libavcodec.dylib in Frameworks */,
@@ -105,8 +115,12 @@
 			children = (
 				9A2CC21C2955351600E48CEB /* AppDelegate.swift */,
 				9A2CC21E2955351600E48CEB /* ViewController.swift */,
-				9A2CC22C295538D800E48CEB /* testc.h */,
-				9A2CC22D295538D800E48CEB /* testc.c */,
+				9A2CC22C295538D800E48CEB /* audio_recording.h */,
+				9A2CC22D295538D800E48CEB /* audio_recording.c */,
+				9A692CD72968D11300849D15 /* video_recording.h */,
+				9A692CD82968D11300849D15 /* video_recording.c */,
+				9A692CD12967E86B00849D15 /* util.h */,
+				9A692CD22967E86B00849D15 /* util.c */,
 				9A2CC2462960058C00E48CEB /* try.c */,
 				9A2CC2202955351700E48CEB /* Assets.xcassets */,
 				9A2CC2222955351700E48CEB /* Main.storyboard */,
@@ -120,6 +134,7 @@
 		9A2CC22F29553DA300E48CEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A692CD42968211700849D15 /* libx264.dylib */,
 				9A5D9D082960A06200FD9968 /* libavcodec.dylib */,
 				9A2CC2432956B92C00E48CEB /* libfdk-aac.dylib */,
 				9A2CC23E2955AE3F00E48CEB /* libswresample.dylib */,
@@ -203,7 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2CC22E295538D800E48CEB /* testc.c in Sources */,
+				9A692CDA2968D1C800849D15 /* audio_recording.c in Sources */,
+				9A692CD32967E86B00849D15 /* util.c in Sources */,
 				9A2CC21F2955351600E48CEB /* ViewController.swift in Sources */,
 				9A2CC21D2955351600E48CEB /* AppDelegate.swift in Sources */,
 			);

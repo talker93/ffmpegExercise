@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+first_swift_app in first_swift_app, no dependencies
