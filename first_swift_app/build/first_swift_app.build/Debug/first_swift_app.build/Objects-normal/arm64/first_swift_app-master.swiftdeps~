@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "7c210285ad91bfaec743ad1cdc75c0a36a39d4994ee93a2203d801d0d6081829"
+build_start_time: [1671757209, 292655944]
+build_end_time: [1671757212, 899019956]
+inputs:
+  "/Users/shanjiang/Desktop/juce_test/1222/first_swift_app/first_swift_app/AppDelegate.swift": [1671757206, 138242959]
+  "/Users/shanjiang/Desktop/juce_test/1222/first_swift_app/first_swift_app/ViewController.swift": [1671757206, 140058279]

@@ -1,0 +1,861 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Cocoa",
+      "printedName": "Cocoa",
+      "declKind": "Import",
+      "moduleName": "first_swift_app"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "first_swift_app"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "first_swift_app"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ViewController",
+      "printedName": "ViewController",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "recStatus",
+          "printedName": "recStatus",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:15first_swift_app14ViewControllerC9recStatusSbvp",
+          "mangledName": "$s15first_swift_app14ViewControllerC9recStatusSbvp",
+          "moduleName": "first_swift_app",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:15first_swift_app14ViewControllerC9recStatusSbvg",
+              "mangledName": "$s15first_swift_app14ViewControllerC9recStatusSbvg",
+              "moduleName": "first_swift_app",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:15first_swift_app14ViewControllerC9recStatusSbvs",
+              "mangledName": "$s15first_swift_app14ViewControllerC9recStatusSbvs",
+              "moduleName": "first_swift_app",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:15first_swift_app14ViewControllerC9recStatusSbvM",
+              "mangledName": "$s15first_swift_app14ViewControllerC9recStatusSbvM",
+              "moduleName": "first_swift_app",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "btn",
+          "printedName": "btn",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSButton",
+              "printedName": "AppKit.NSButton",
+              "usr": "c:objc(cs)NSButton"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:15first_swift_app14ViewControllerC3btnSo8NSButtonCvp",
+          "mangledName": "$s15first_swift_app14ViewControllerC3btnSo8NSButtonCvp",
+          "moduleName": "first_swift_app",
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSButton",
+                  "printedName": "AppKit.NSButton",
+                  "usr": "c:objc(cs)NSButton"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:15first_swift_app14ViewControllerC3btnSo8NSButtonCvg",
+              "mangledName": "$s15first_swift_app14ViewControllerC3btnSo8NSButtonCvg",
+              "moduleName": "first_swift_app",
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "thread",
+          "printedName": "thread",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Thread?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Thread",
+                  "printedName": "Foundation.Thread",
+                  "usr": "c:objc(cs)NSThread"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvp",
+          "mangledName": "$s15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvp",
+          "moduleName": "first_swift_app",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Foundation.Thread?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Thread",
+                      "printedName": "Foundation.Thread",
+                      "usr": "c:objc(cs)NSThread"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvg",
+              "mangledName": "$s15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvg",
+              "moduleName": "first_swift_app",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Foundation.Thread?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Thread",
+                      "printedName": "Foundation.Thread",
+                      "usr": "c:objc(cs)NSThread"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvs",
+              "mangledName": "$s15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvs",
+              "moduleName": "first_swift_app",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvM",
+              "mangledName": "$s15first_swift_app14ViewControllerC6threadSo8NSThreadCSgvM",
+              "moduleName": "first_swift_app",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "viewDidLoad",
+          "printedName": "viewDidLoad()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@first_swift_app@objc(cs)ViewController(im)viewDidLoad",
+          "mangledName": "$s15first_swift_app14ViewControllerC11viewDidLoadyyF",
+          "moduleName": "first_swift_app",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "viewDidLoad",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "myFunc",
+          "printedName": "myFunc()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@first_swift_app@objc(cs)ViewController(im)myFunc",
+          "mangledName": "$s15first_swift_app14ViewControllerC6myFuncyyF",
+          "moduleName": "first_swift_app",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "recAudio",
+          "printedName": "recAudio()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@first_swift_app@objc(cs)ViewController(im)recAudio",
+          "mangledName": "$s15first_swift_app14ViewControllerC8recAudioyyF",
+          "moduleName": "first_swift_app",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Var",
+          "name": "representedObject",
+          "printedName": "representedObject",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Any?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ProtocolComposition",
+                  "printedName": "Any"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@first_swift_app@objc(cs)ViewController(py)representedObject",
+          "mangledName": "$s15first_swift_app14ViewControllerC17representedObjectypSgvp",
+          "moduleName": "first_swift_app",
+          "overriding": true,
+          "isOpen": true,
+          "objc_name": "representedObject",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@first_swift_app@objc(cs)ViewController(im)representedObject",
+              "mangledName": "$s15first_swift_app14ViewControllerC17representedObjectypSgvg",
+              "moduleName": "first_swift_app",
+              "overriding": true,
+              "implicit": true,
+              "isOpen": true,
+              "objc_name": "representedObject",
+              "declAttributes": [
+                "Dynamic",
+                "ObjC",
+                "Custom",
+                "Override"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@first_swift_app@objc(cs)ViewController(im)setRepresentedObject:",
+              "mangledName": "$s15first_swift_app14ViewControllerC17representedObjectypSgvs",
+              "moduleName": "first_swift_app",
+              "overriding": true,
+              "implicit": true,
+              "isOpen": true,
+              "objc_name": "setRepresentedObject:",
+              "declAttributes": [
+                "Dynamic",
+                "ObjC",
+                "Custom",
+                "Override"
+              ],
+              "accessorKind": "set"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(nibName:bundle:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ViewController",
+              "printedName": "first_swift_app.ViewController",
+              "usr": "c:@M@first_swift_app@objc(cs)ViewController"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Bundle?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bundle",
+                  "printedName": "Foundation.Bundle",
+                  "usr": "c:objc(cs)NSBundle"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@first_swift_app@objc(cs)ViewController(im)initWithNibName:bundle:",
+          "mangledName": "$s15first_swift_app14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+          "moduleName": "first_swift_app",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithNibName:bundle:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(coder:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "first_swift_app.ViewController?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ViewController",
+                  "printedName": "first_swift_app.ViewController",
+                  "usr": "c:@M@first_swift_app@objc(cs)ViewController"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSCoder",
+              "printedName": "Foundation.NSCoder",
+              "usr": "c:objc(cs)NSCoder"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@first_swift_app@objc(cs)ViewController(im)initWithCoder:",
+          "mangledName": "$s15first_swift_app14ViewControllerC5coderACSgSo7NSCoderC_tcfc",
+          "moduleName": "first_swift_app",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "initWithCoder:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom",
+            "Required"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@first_swift_app@objc(cs)ViewController",
+      "mangledName": "$s15first_swift_app14ViewControllerC",
+      "moduleName": "first_swift_app",
+      "isOpen": true,
+      "declAttributes": [
+        "Custom",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)NSViewController",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "AppKit.NSViewController",
+        "AppKit.NSResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Cocoa",
+      "printedName": "Cocoa",
+      "declKind": "Import",
+      "moduleName": "first_swift_app"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "first_swift_app"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "first_swift_app"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AppDelegate",
+      "printedName": "AppDelegate",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "applicationDidFinishLaunching",
+          "printedName": "applicationDidFinishLaunching(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Notification",
+              "printedName": "Foundation.Notification",
+              "usr": "s:10Foundation12NotificationV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@first_swift_app@objc(cs)AppDelegate(im)applicationDidFinishLaunching:",
+          "mangledName": "$s15first_swift_app11AppDelegateC29applicationDidFinishLaunchingyy10Foundation12NotificationVF",
+          "moduleName": "first_swift_app",
+          "isOpen": true,
+          "objc_name": "applicationDidFinishLaunching:",
+          "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "applicationWillTerminate",
+          "printedName": "applicationWillTerminate(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Notification",
+              "printedName": "Foundation.Notification",
+              "usr": "s:10Foundation12NotificationV"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@first_swift_app@objc(cs)AppDelegate(im)applicationWillTerminate:",
+          "mangledName": "$s15first_swift_app11AppDelegateC24applicationWillTerminateyy10Foundation12NotificationVF",
+          "moduleName": "first_swift_app",
+          "isOpen": true,
+          "objc_name": "applicationWillTerminate:",
+          "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "applicationSupportsSecureRestorableState",
+          "printedName": "applicationSupportsSecureRestorableState(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSApplication",
+              "printedName": "AppKit.NSApplication",
+              "usr": "c:objc(cs)NSApplication"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@first_swift_app@objc(cs)AppDelegate(im)applicationSupportsSecureRestorableState:",
+          "mangledName": "$s15first_swift_app11AppDelegateC40applicationSupportsSecureRestorableStateySbSo13NSApplicationCF",
+          "moduleName": "first_swift_app",
+          "isOpen": true,
+          "objc_name": "applicationSupportsSecureRestorableState:",
+          "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AppDelegate",
+              "printedName": "first_swift_app.AppDelegate",
+              "usr": "c:@M@first_swift_app@objc(cs)AppDelegate"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@first_swift_app@objc(cs)AppDelegate(im)init",
+          "mangledName": "$s15first_swift_app11AppDelegateCACycfc",
+          "moduleName": "first_swift_app",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "$main",
+          "printedName": "$main()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:15first_swift_app11AppDelegateC5$mainyyFZ",
+          "mangledName": "$s15first_swift_app11AppDelegateC5$mainyyFZ",
+          "moduleName": "first_swift_app",
+          "static": true,
+          "implicit": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@first_swift_app@objc(cs)AppDelegate",
+      "mangledName": "$s15first_swift_app11AppDelegateC",
+      "moduleName": "first_swift_app",
+      "isOpen": true,
+      "declAttributes": [
+        "MainType",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)NSObject",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}
