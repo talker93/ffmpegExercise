@@ -1,4 +1,4 @@
-#include "testc.h"
+#include "video_recording.h"
 #include <string.h>
 
 #define V_WIDTH 640

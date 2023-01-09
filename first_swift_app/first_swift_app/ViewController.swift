@@ -34,19 +34,19 @@ class ViewController: NSViewController {
         if recStatus {
             // status: true
             // init thread
-            thread = Thread.init(target: self, selector: #selector(self.recAudio), object: nil)
+            thread = Thread.init(target: self, selector: #selector(self.PublishStream), object: nil)
             thread?.start()
-            self.btn.title = "stop"
+            self.btn.title = "stop streaming"
         } else {
             // status: false
             // set status to 0, let the sub process finish
             set_status(0)
-            self.btn.title = "start recording"
+            self.btn.title = "start streaming"
         }
     }
     
-    @objc func recAudio() {
-        rec_audio()
+    @objc func PublishStream() {
+        publish_stream();
     }
 
     override var representedObject: Any? {
