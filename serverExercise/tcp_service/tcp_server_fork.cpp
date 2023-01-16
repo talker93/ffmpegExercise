@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <ctime>
 
 #define PORT 8111
 #define MESSAGE_LEN 1024
@@ -11,6 +12,7 @@ int main(int argc, char* argv[]) {
     int on = 1;
     int ret = 0;
     int backlog = 10;
+    pid_t pid;
     
     struct sockaddr_in localaddr, remoteaddr;
     
@@ -34,19 +36,35 @@ int main(int argc, char* argv[]) {
     // step 4: accept --> receive & send
     for(;;) {
         socklen_t addr_len = sizeof(struct sockaddr);
+        std::cout << "-------" << std::endl;
+        std::cout << pid << std::endl;
+        std::cout << "-------" << std::endl;
         accept_fd = accept(socket_fd, (struct sockaddr*) &remoteaddr, &addr_len);
-        for(;;) {
-            memset(&in_buff, 0, sizeof(char) * MESSAGE_LEN);
-            ret = recv(accept_fd, (void*)in_buff, MESSAGE_LEN, 0);
-            if(ret == 0) {
-                break;
-            }
-            
-            std::cout << "recv: " << in_buff << std::endl;
-            send(accept_fd, (void*)in_buff, MESSAGE_LEN, 0);
-        }
+        std::cout << "process " << pid << "accepted at: " << std::time(nullptr) << std::endl;
         
-        close(accept_fd);
+        pid = fork();
+        
+        if(pid == 0) {
+            for(;;) {
+                memset(&in_buff, 0, sizeof(char) * MESSAGE_LEN);
+                ret = recv(accept_fd, (void*)in_buff, MESSAGE_LEN, 0);
+                std::cout << "process " << pid << "received at: " << std::time(nullptr) << std::endl;
+                
+                // ret = 0 when the peer orderly shutdown
+                if(ret == 0) {
+                    break;
+                }
+                
+                std::cout << "recv: " << in_buff << std::endl;
+                send(accept_fd, (void*)in_buff, MESSAGE_LEN, 0);
+                std::cout << "process " << pid << "sent at: " << std::time(nullptr) << std::endl;
+            }
+            close(accept_fd);
+        }
+    }
+    
+    if(pid != 0) {
+        close(socket_fd);
     }
     
     return 0;
